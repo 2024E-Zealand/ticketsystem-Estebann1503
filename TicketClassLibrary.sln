@@ -9,6 +9,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketClasLibraryTest", "Ti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{3AFA3FB8-1CBC-4413-900A-FE433D20B6EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundBronTicketLibrary", "OresundBronTicketLibrary\OresundBronTicketLibrary.csproj", "{C594BB61-6031-40CE-9B64-006D7F8B09FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundBronTicketLibrary.Tests", "OresundBronTicketLibrary.Tests\OresundBronTicketLibrary.Tests.csproj", "{CB72FA2E-0451-4AC6-B8CE-A77A8169748E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary.Tests", "StoreBaeltTicketLibrary.Tests\StoreBaeltTicketLibrary.Tests.csproj", "{7435E1B7-34A0-46ED-990F-B4C1F644B9BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ticket", "Ticket", "{F0EEB00B-83A9-47E3-9520-5D08D24A3393}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Oresund", "Oresund", "{62C7ECEC-71D8-43A2-8591-0A36FFEC8972}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StoreBaelt", "StoreBaelt", "{C3E86B13-1F0E-458D-AC0F-6EB1131FFF76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extern dll", "extern dll", "{6B154556-2F03-4037-8AC5-BB335760345D}"
+	ProjectSection(SolutionItems) = preProject
+		extern dll\TicketClassLibrary.dll = extern dll\TicketClassLibrary.dll
+		extern dll\TicketClassLibrary.xml = extern dll\TicketClassLibrary.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +45,29 @@ Global
 		{3AFA3FB8-1CBC-4413-900A-FE433D20B6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AFA3FB8-1CBC-4413-900A-FE433D20B6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AFA3FB8-1CBC-4413-900A-FE433D20B6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C594BB61-6031-40CE-9B64-006D7F8B09FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C594BB61-6031-40CE-9B64-006D7F8B09FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C594BB61-6031-40CE-9B64-006D7F8B09FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C594BB61-6031-40CE-9B64-006D7F8B09FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB72FA2E-0451-4AC6-B8CE-A77A8169748E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB72FA2E-0451-4AC6-B8CE-A77A8169748E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB72FA2E-0451-4AC6-B8CE-A77A8169748E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB72FA2E-0451-4AC6-B8CE-A77A8169748E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7435E1B7-34A0-46ED-990F-B4C1F644B9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7435E1B7-34A0-46ED-990F-B4C1F644B9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7435E1B7-34A0-46ED-990F-B4C1F644B9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7435E1B7-34A0-46ED-990F-B4C1F644B9BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D4543C1-8A23-4A88-824D-35285F537A58} = {F0EEB00B-83A9-47E3-9520-5D08D24A3393}
+		{A4D843C4-1558-4D3A-8EFD-6091A13C06F1} = {F0EEB00B-83A9-47E3-9520-5D08D24A3393}
+		{3AFA3FB8-1CBC-4413-900A-FE433D20B6EC} = {C3E86B13-1F0E-458D-AC0F-6EB1131FFF76}
+		{C594BB61-6031-40CE-9B64-006D7F8B09FF} = {62C7ECEC-71D8-43A2-8591-0A36FFEC8972}
+		{CB72FA2E-0451-4AC6-B8CE-A77A8169748E} = {62C7ECEC-71D8-43A2-8591-0A36FFEC8972}
+		{7435E1B7-34A0-46ED-990F-B4C1F644B9BD} = {C3E86B13-1F0E-458D-AC0F-6EB1131FFF76}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1023E039-6FCB-45B4-BE49-A17BC96CB793}

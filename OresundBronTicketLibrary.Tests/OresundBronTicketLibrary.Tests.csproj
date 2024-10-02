@@ -17,8 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj" />
-    <ProjectReference Include="..\TicketClassLibrary\TicketClassLibrary.csproj" />
+    <ProjectReference Include="..\OresundBronTicketLibrary\OresundBronTicketLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TicketClassLibrary">
+      <HintPath>..\extern dll\TicketClassLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
