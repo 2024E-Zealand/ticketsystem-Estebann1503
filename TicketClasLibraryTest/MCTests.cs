@@ -20,16 +20,17 @@ namespace TicketClassLibrary.Tests
         }
 
         [TestMethod]
-        public void Vehicle_ReturnsMC()
+        public void VehicleType_ReturnsMC()
         {
             // Arrange
             MC mc = new MC();
 
             // Act
-            string vehicleType = mc.Vehicle();
+            string vehicleType = mc.VehicleType();
 
             // Assert
             Assert.AreEqual("MC", vehicleType);
+
         }
     }
 }

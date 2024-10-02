@@ -3,25 +3,15 @@
 namespace TicketClassLibrary
 {
     /// <summary>
-    /// Represents a car with a license plate and a date.
+    /// Represents a car.
     /// </summary>
-    public class Car
+    public class Car : Vehicle
     {
         /// <summary>
-        /// Gets or sets the license plate of the car.
+        /// Returns the price of the car ticket.
         /// </summary>
-        public string Licenseplate { get; set; }
-
-        /// <summary>
-        /// Gets or sets the date associated with the car.
-        /// </summary>
-        public DateTime Date { get; set; }
-
-        /// <summary>
-        /// Returns the fixed price of the car.
-        /// </summary>
-        /// <returns>The price of the car (240).</returns>
-        public double Price()
+        /// <returns>The price of the car ticket (240).</returns>
+        public override double Price()
         {
             return 240;
         }
@@ -30,7 +20,7 @@ namespace TicketClassLibrary
         /// Returns the type of the vehicle.
         /// </summary>
         /// <returns>A string indicating the vehicle type ("Car").</returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }
