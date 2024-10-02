@@ -62,5 +62,37 @@ namespace TicketClassLibrary.Tests
             Assert.AreEqual(validLicensePlate, car.Licenseplate);
         }
 
+        [TestMethod]
+        public void Price_WithBrobizz_ReturnsDiscountedPrice()
+        {
+            // Arrange
+            Car car = new Car();
+            car.BrobizzUsed = true;
+
+            // Act
+            double price = car.Price();
+
+            // Assert
+            double expectedPrice = 240 * 0.95;
+            double delta = 0.001;
+            Assert.AreEqual(expectedPrice, price, delta, "Price with Brobizz discount is incorrect.");
+        }
+
+        [TestMethod]
+        public void Price_WithoutBrobizz_ReturnsFullPrice()
+        {
+            // Arrange
+            Car car = new Car();
+            car.BrobizzUsed = false;
+
+            // Act
+            double price = car.Price();
+
+            // Assert
+            double expectedPrice = 240;
+            Assert.AreEqual(expectedPrice, price, "Price without Brobizz discount should be full price.");
+        }
+
+
     }
 }

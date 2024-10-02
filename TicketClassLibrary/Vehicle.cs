@@ -40,5 +40,24 @@ namespace TicketClassLibrary
         /// </summary>
         /// <returns>A string indicating the vehicle type.</returns>
         public abstract string VehicleType();
+
+        /// <summary>
+        /// Gets or sets a value indicating whether a Brobizz is used.
+        /// </summary>
+        public bool BrobizzUsed { get; set; }
+
+        /// <summary>
+        /// Applies a 5% discount to the price if Brobizz is used.
+        /// </summary>
+        /// <param name="price">The original price.</param>
+        /// <returns>The price after applying the Brobizz discount.</returns>
+        protected double ApplyBrobizzDiscount(double price)
+        {
+            if (BrobizzUsed)
+                return price * 0.95; // Apply 5% discount
+            else
+                return price;
+        }
+
     }
 }

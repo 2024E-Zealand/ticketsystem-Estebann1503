@@ -10,10 +10,11 @@ namespace TicketClassLibrary
         /// <summary>
         /// Returns the price of the car ticket.
         /// </summary>
-        /// <returns>The price of the car ticket (240).</returns>
+        /// <returns>The price of the car ticket.</returns>
         public override double Price()
         {
-            return 240;
+            double basePrice = 240;
+            return ApplyBrobizzDiscount(basePrice);
         }
 
         /// <summary>
