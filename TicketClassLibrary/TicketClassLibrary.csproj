@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <BaseOutputPath>C:\Users\THST\OneDrive - KP\Repos\ticketsystem-Estebann1503\DLL</BaseOutputPath>
   </PropertyGroup>
 
 </Project>
