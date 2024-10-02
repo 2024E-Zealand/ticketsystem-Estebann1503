@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:TicketClassLibrary.Car">
+            <summary>
+            Represents a car.
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.Car.Price">
+            <summary>
+            Returns the price of the car ticket.
+            </summary>
+            <returns>The price of the car ticket.</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Car.VehicleType">
+            <summary>
+            Returns the type of the vehicle.
+            </summary>
+            <returns>A string indicating the vehicle type ("Car").</returns>
+        </member>
+        <member name="T:TicketClassLibrary.MC">
+            <summary>
+            Represents a motorcycle (MC).
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.MC.Price">
+            <summary>
+            Returns the price of the motorcycle ticket.
+            </summary>
+            <returns>The price of the motorcycle ticket.</returns>
+        </member>
+        <member name="M:TicketClassLibrary.MC.VehicleType">
+            <summary>
+            Returns the type of the vehicle.
+            </summary>
+            <returns>A string indicating the vehicle type ("MC").</returns>
+        </member>
+        <member name="T:TicketClassLibrary.Vehicle">
+            <summary>
+            Represents a general vehicle.
+            </summary>
+        </member>
+        <member name="P:TicketClassLibrary.Vehicle.Licenseplate">
+            <summary>
+            Gets or sets the license plate of the vehicle.
+            The license plate must not be longer than 7 characters.
+            </summary>
+        </member>
+        <member name="P:TicketClassLibrary.Vehicle.Date">
+            <summary>
+            Gets or sets the date associated with the vehicle.
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.Vehicle.Price">
+            <summary>
+            Returns the price of the vehicle.
+            </summary>
+            <returns>The price of the vehicle.</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Vehicle.VehicleType">
+            <summary>
+            Returns the type of the vehicle.
+            </summary>
+            <returns>A string indicating the vehicle type.</returns>
+        </member>
+        <member name="P:TicketClassLibrary.Vehicle.BrobizzUsed">
+            <summary>
+            Gets or sets a value indicating whether a Brobizz is used.
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.Vehicle.ApplyBrobizzDiscount(System.Double)">
+            <summary>
+            Applies a 5% discount to the price if Brobizz is used.
+            </summary>
+            <param name="price">The original price.</param>
+            <returns>The price after applying the Brobizz discount.</returns>
+        </member>
+    </members>
+</doc>
