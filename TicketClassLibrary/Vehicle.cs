@@ -7,10 +7,22 @@ namespace TicketClassLibrary
     /// </summary>
     public abstract class Vehicle
     {
+        private string _licenseplate;
+
         /// <summary>
         /// Gets or sets the license plate of the vehicle.
+        /// The license plate must not be longer than 7 characters.
         /// </summary>
-        public string Licenseplate { get; set; }
+        public string Licenseplate
+        {
+            get { return _licenseplate; }
+            set
+            {
+                if (value.Length > 7)
+                    throw new ArgumentException("License plate cannot be longer than 7 characters.");
+                _licenseplate = value;
+            }
+        }
 
         /// <summary>
         /// Gets or sets the date associated with the vehicle.

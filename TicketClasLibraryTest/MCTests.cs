@@ -32,5 +32,36 @@ namespace TicketClassLibrary.Tests
             Assert.AreEqual("MC", vehicleType);
 
         }
+
+        [TestMethod]
+        public void Licenseplate_WhenLongerThan7Characters_ThrowsArgumentException()
+        {
+            // Arrange
+            MC mc = new MC();
+
+            // Act & Assert
+            var exception = Assert.ThrowsException<ArgumentException>(() =>
+            {
+                mc.Licenseplate = "ABCDEFGH"; // 8 characters
+            });
+
+            // Optionally, verify the exception message
+            Assert.AreEqual("License plate cannot be longer than 7 characters.", exception.Message);
+        }
+
+        [TestMethod]
+        public void Licenseplate_When7CharactersOrLess_DoesNotThrowException()
+        {
+            // Arrange
+            MC mc = new MC();
+            string validLicensePlate = "ABC1234"; // 7 characters
+
+            // Act
+            mc.Licenseplate = validLicensePlate;
+
+            // Assert
+            Assert.AreEqual(validLicensePlate, mc.Licenseplate);
+        }
+
     }
 }
